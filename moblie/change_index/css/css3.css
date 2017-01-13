@@ -1,0 +1,209 @@
+body{
+    background: #ffffff;
+    overflow-x: hidden;
+}
+/*头部*/
+.root{
+    position: relative;
+    overflow-x:hidden;
+    margin: 0 auto;
+    max-width: 640px;
+    height: auto;
+}
+header{
+    height: 4.5rem;
+    position: relative;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 1rem #000;
+    z-index: 4;
+}
+.logo{
+    z-index: 2;
+    position: absolute;
+    top:0.225rem;
+    left: 1.7rem;
+    height: 4.05rem;
+    width: 9.09rem;
+    background: url("../images/logo.png") no-repeat center;
+    background-size: contain;
+}
+/*主题*/
+.head{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.wrap{
+    width: 100%;
+    overflow: hidden;
+}
+.wrap img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.head_font{
+    position: absolute;
+    top:1rem;
+    left: 1.5rem;
+    z-index: 5;
+    font-size: 2rem;
+    color: #ffffff;
+    font-family:"Microsoft YaHei";
+    font-weight: bold;
+}
+.content{
+    padding: 0 1.7rem;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+.introduce{
+    width: 100%;
+    margin-top: 1.6rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+.introduce p{
+    font-weight: bold;
+    font-size: 1.6rem;
+    font-family:"Microsoft YaHei";
+    font-weight: bold;
+    color: #535353;
+    line-height: 2rem;
+    letter-spacing:0.1rem;
+}
+.content{
+    overflow: hidden;
+    display: block;
+    height: auto;
+    padding: 0 1rem;
+}
+.content img{
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+.content h2{
+    font-size: 1.8rem;
+    font-family:"Microsoft YaHei";
+    font-weight: bold;
+    color: #29d36d;
+    margin-bottom: 2rem;
+}
+/*产品展示*/
+.img_wrap{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    margin-bottom: 2.9rem;
+}
+
+.wrap_h3{
+    color: #525252;
+    text-align: center;
+    position: relative;
+    font-size: 1.6rem;
+    font-family:"Microsoft YaHei";
+    margin-bottom: 1.4rem;
+}
+.img_box{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 11.8rem;
+}
+.box_left{
+    position: absolute;
+    left: 0;
+    width: 48%;
+    overflow: hidden;
+}
+.box_right{
+    position: absolute;
+    right: 0;
+    width: 48%;
+}
+.img_box img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/*产品轮播*/
+.example_play{
+    margin-top: 3rem;
+    position: relative;
+    width: 100%;
+    height: 16rem;
+    overflow-x: hidden;
+}
+.product_wrap{
+    display:-webkit-flex;
+    display:flex;
+    position: relative;
+    padding: 1rem;
+    height: 16rem;
+    overflow: hidden;
+    background: #ffffff;
+}
+.product_img{
+    -webkit-flex: 0 0 11rem;
+    flex: 0 0 11rem;
+    /* for uc */
+    -webkit-box-flex: 0 0 11rem;
+    -moz-box-flex:0 0 11rem ;
+    -ms-flex: 0 0 11rem;
+    overflow: hidden;
+    height: 14rem;
+    border: 1px solid #919191;
+}
+.product_img img{
+
+    display: block;
+    width: 100%;
+}
+.product_font{
+    flex:1 0 0;
+    /* for uc */
+    -webkit-box-flex:1 0 auto;
+    -moz-box-flex:1 0 auto;
+    -ms-flex:1 0 auto;
+    padding: 1rem;
+    overflow: hidden;
+}
+.product_font h3{
+    margin-left: 1rem;
+    font-size: 1.6rem;
+}
+.product_font p{
+    margin-left: 1rem;
+    text-align: justify;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4){
+    margin-right: 2rem;
+}
+/*底部*/
+footer{
+    margin-top: 1.7rem;
+    width: 100%;
+    overflow: hidden;
+    height: 8.3rem;
+    background: #e5e5e5;
+    text-align: center;
+}
+.logo_img{
+    margin: 1.6rem auto 1.2rem;
+    width: 16rem;
+    height: 1.5rem;
+    background: url("../images/footer.png") no-repeat center center;
+    background-size: cover;
+}
+.logo_font{
+    margin-bottom: 1.2rem;
+}

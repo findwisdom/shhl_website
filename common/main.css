@@ -1,0 +1,421 @@
+/*重置样式表*/
+/*create by Vergil*/
+section, header, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+a {
+    text-decoration: none; /*去掉链接下划线*/
+}
+
+/*
+样式表*/
+/*header*/
+header {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+header>img{
+    max-width: 100%;
+}
+
+#logo>img{
+    max-width: 100%;
+}
+
+#headerNav {
+    width: 100%;
+    height: 6.25em;
+    background-color: rgba(252, 252, 252, 0.9);
+    position: absolute;
+    top: 2.5em;
+    overflow: hidden;
+}
+
+#logo {
+    width: 8.75%;
+    float: left;
+    margin: 1.5em 0em 0em 22.91%;
+}
+
+.nav {
+    width: 28.75%;
+    float: right;
+    margin: 2.5em 22.81% 0em 0em;
+
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0.83% 0 0;
+
+}
+
+nav ul li a {
+    color: rgb(154, 154, 154);
+}
+
+#headerText {
+    height: 13.75em;
+    width: 18.23%;
+    background-color: rgba(64, 201, 121, 0.9);
+    position: absolute;
+    top: 45.75em;
+    left: 21.875%;
+    color: rgb(255, 255, 255);
+}
+
+.text1 {
+    font-size: 1.125em;
+    margin: 2.375em 0 0 8%;
+}
+
+.text2 {
+    font-size: 1.6em;
+    margin: 0 0 0 8%;
+}
+
+.text3 {
+    height: 2.875em;
+    width: 50%;
+    margin: 1.875em 0 0 8%;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 2.875em;
+}
+
+.text3 a {
+    color: rgb(255, 255, 255);
+}
+
+/*项目分类模块*/
+.categorySection{
+    width: 100%;
+    height: 75em;
+}
+.category {
+    /*overflow: hidden;*/
+    height: 25em;
+    width: 56.25%;
+    margin-left: 21.875%;
+    /*margin-top: -5px;*/
+    /*margin-right: 20%;*/
+
+}
+
+.section1{
+    margin-top: -5px;
+    float: left;
+    width: 59.259%;
+}
+.section1>img,.section4>img{
+    max-width: 100%;
+    /*height: 25em;*/
+}
+
+.section2{
+    float:left;
+    width: 37.041%;
+    color: black;
+    padding-left: 3.7%;
+}
+
+.section3 {
+    padding-left: 3.7%;
+    margin-top: -10px;
+    width: 37.041%;
+    float: left;
+    color: black;
+}
+
+.section4 {
+    width:59.259%;
+    margin-top: -9px;
+    float: right;
+}
+.energy {
+    font-size: 2em;
+    margin-top: 3em;
+}
+
+.energy_English {
+    font-size: 1.3em;
+}
+
+.energyButton {
+    /*background-color:rgb(41,211,109);*/
+    width: 150px;
+    height: 2.875em;
+    border-radius: 5px;
+    border: none;
+    background-image: url("images/企业网站改版(2)_03.jpg");
+    margin-top: 2em;
+}
+
+/*公司简介模块*/
+.companyProfile{
+    /*overflow: hidden;*/
+    width: 100%;
+    height: 37em;
+
+}
+.companyImage{
+    width:50%;
+    height: 37em;
+    float: left;
+    margin-top: -5px;
+}
+.companyImage>img{
+    width: 100%;
+}
+.companyText{
+    margin-top: -5px;
+    color:rgb(175,175,175);
+    line-height: 2em;
+    background-color: rgb(232,232,232);
+    float:left;
+    width:43.646%;
+    height: 32.7em;
+    padding: 7em 0 0 6.354%;
+}
+
+
+/*服务项目模块*/
+
+.services{
+    width: 100%;
+}
+.title{
+    height: 3em;
+    padding: 2.5em 0 0 46.875%;
+    font-size: 2em;
+    margin-top: -5px;
+    color: black;
+}
+.servicesItems{
+    height: 30em;
+ /*   background-color: blue;*/
+}
+.greenBuild{
+    margin: 0 0 0 25em;
+    width: 35em;
+    height: 15em;
+    float: left;
+}
+.netOperation{
+    /*margin: 0 0 0 20em;*/
+    width: 35em;
+    height: 15em;
+    float: left;
+    /*background-color: darkgoldenrod;*/
+}
+.greenBulidImg{
+    float: left;
+    margin-right: 2em;
+}
+.greenBuildText{
+    color: #000;
+}
+
+/*案例展示*/
+.caseShow{
+    width: 100%;
+    height: 42.5em;
+    background-color: gainsboro;
+    padding-top: 50px;
+}
+
+.case{
+    width: 100%;
+    height: 25em;
+}
+.case>img{
+    float: left;
+    width: 33.98%;
+    height: 25em;
+}
+
+/*合作伙伴*/
+.partner{
+    width: 100%;
+    height: 47.75em;
+}
+.partnerCompany{
+    margin: 0 0 0 21.25%;
+    width: 56%;
+}
+.partnerImg{
+    width:20%;
+    height: 13.625em;
+    background-color:rgb(232,232,232);
+    float: left;
+}
+.partnerImg1{
+    width:20%;
+    height: 13.625em;
+    background-color:rgb(255,255,255);
+    float: left;
+
+}
+
+
+/*新闻政策*/
+.news{
+    width: 100%;
+    height: 35em;
+    background-color: gainsboro;
+}
+.newsText{
+    width: 20em;
+    height: 18.5em;
+    float: left;
+    margin-left: 21.875%;
+
+}
+.newsText1{
+    width: 20em;
+    height: 18.5em;
+    float: left;
+    margin-left: 3.02%;}
+.news1{
+    width:15em;
+    height: 2.25em;
+    background-color:rgb(2,168,244);
+    line-height: 2em;
+    margin-bottom: 2em;
+}
+.news2{
+    width:15em;
+    height: 2.25em;
+    background-color:rgb(41,211,109);
+    line-height: 2em;
+    margin-bottom: 2em;
+}
+.news3{
+    width:15em;
+    height: 2.25em;
+    background-color:rgb(243,101,35);
+    line-height: 2em;
+    margin-bottom: 2em;
+}
+
+
+.file1{
+    height: 14.75em;
+    width:15em;
+    border: 1px solid rgb(2,168,244);
+    margin-top: 20px;
+}
+.file2{
+    height: 14.75em;
+    width:15em;
+    border: 1px solid rgb(41,211,109);
+    margin-top: 20px;
+}
+.file3{
+    height: 14.75em;
+    width:15em;
+    border: 1px solid rgb(243,101,35);
+    margin-top: 20px;
+}
+.file1>p>a,.file2>p>a,.file3>p>a{
+    color: black;
+}
+
+.message{
+    width: 13em;
+    height: 2em;
+    line-height: 2em;
+    margin: 1em auto 0 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    overflow: hidden;
+    border-bottom: 1px solid #02a8f4;
+}
+
+/*底部*/
+.foot{
+    width: 100%;
+    overflow: hidden;
+}
+
+.footText{
+     margin: 3.5em 0 0 21.212121%;
+     float: left;
+ }
+.footText1{
+    margin: 3.5em 0 0 4.4%;
+    float: left;
+}
+.footText ul li a,.footText1 ul li a{
+    color: #000;
+}
+
+.footTextLi{
+    margin-bottom:2em;
+    font-size: 1em;
+}
+
+.qrCode{
+    width:9.79%;
+    height: 11em;
+    float: left;
+    /*background-color: black;*/
+    padding-left:2.1212% ;
+    border:1px solid black;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    margin-left: 2.6%;
+    margin-top: 3.5em;
+}
+.copyright{
+    margin-top: 4em;
+    width: 13.43%;
+    height: 30em;
+    font-size: 0.59em;
+    margin-left: 37.1875%;
+    margin-top: 30px;
+    text-align: center;
+}

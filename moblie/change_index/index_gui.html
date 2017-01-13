@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="css/reset.css">
+    <link  rel="stylesheet" href="css/css_gui.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+    <div class="root">
+        <!--顶栏-->
+        <header>
+            <div class="logo"></div>
+        </header>
+        <!--主题-->
+        <div class="head">
+            <div class="head_font">硅藻泥涂装</div>
+            <div class="wrap"><img src="images/gui_head.jpg" alt="" class="wrap_img"></div>
+        </div>
+        <!--功能介绍-->
+        <div class="function_box">
+            <div class="function_img"><img src="images/gui1.png" alt=""></div>
+            <div class="function_img"><img src="images/gui2.png" alt=""></div>
+            <div class="function_img"><img src="images/gui3.png" alt=""></div>
+            <div class="function_img"><img src="images/gui4.png" alt=""></div>
+        </div>
+        <!--空间艺术-->
+        <div class="margin_h3">
+            <h3>空间艺术</h3>
+            <p>Art Space</p>
+        </div>
+        <div class="art_img">
+            <div class="artimgbox">
+                <div class="boxleft">
+                    <img src="images/art1.jpg" alt="">
+                    <div class="boxleft_font">家居环境</div>
+                </div>
+                <div class="boxright">
+                    <img src="images/art2.jpg" alt="">
+                    <div class="boxleft_font">办公场所</div>
+                </div>
+            </div>
+            <div class="artimgbox">
+                <div class="boxleft">
+                    <img src="images/art3.jpg" alt="">
+                    <div class="boxleft_font">家居环境</div>
+                </div>
+                <div class="boxright">
+                    <img src="images/art4.jpg" alt="">
+                    <div class="boxleft_font">办公场所</div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <a href="index2.html" class="swiper-slide"></a>
+                    <a href="change_index/index_zhaoming.html" class="swiper-slide"></a>
+                    <a href="index2.html" class="swiper-slide"></a>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="logo_img"></div>
+            <div class="logo_font">
+                <p>渝ICP备16003891号</p>
+                <p>Copyright © 2015-2016 重庆三和汇联科技有限公司</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            loop : true,
+            loopAdditionalSlides:0,
+            autoplay:3000,
+            autoplayDisableOnInteraction:false,
+            paginationClickable: true,
+        });
+    </script>
+</body>
+</html>

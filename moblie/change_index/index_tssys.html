@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="css/reset.css">
+    <link  rel="stylesheet" href="css/css3.css" />
+    <link rel="stylesheet" href="css/swiper.min1.css">
+</head>
+<body>
+    <div class="root">
+        <!--顶栏-->
+        <header>
+            <div class="logo"></div>
+        </header>
+        <!--主题-->
+        <div class="head">
+            <div class="head_font">外墙涂饰系统</div>
+            <div class="wrap"><img src="images/tssys_head.jpg" alt="" class="wrap_img"></div>
+        </div>
+        <!--施工方案-->
+        <div class="content">
+            <div class="introduce">
+                <p>涂饰材料与专业配套的</p>
+                <p>外墙涂装基层材料共同构成的系统</p>
+            </div>
+            <img src="images/process2.png" alt="">
+            <h2>外墙涂饰系统</h2>
+        </div>
+        <div class="img_wrap">
+            <h3 class="wrap_h3">氟碳漆</h3>
+            <div class="img_box">
+                <div class="box_left"><img src="images/tushi1.jpg" alt=""></div>
+                <div class="box_right"><img src="images/tushi2.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <h3 class="wrap_h3">乳胶漆</h3>
+            <div class="img_box">
+                <div class="box_left"><img src="images/tushi3.jpg" alt=""></div>
+                <div class="box_right"><img src="images/tushi4.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <h3 class="wrap_h3">水多彩</h3>
+            <div class="img_box">
+                <div class="box_left"><img src="images/tushi5.jpg" alt=""></div>
+                <div class="box_right"><img src="images/tushi6.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <h3 class="wrap_h3">真石漆</h3>
+            <div class="img_box">
+                <div class="box_left"><img src="images/tushi7.jpg" alt=""></div>
+                <div class="box_right"><img src="images/tushi8.jpg" alt=""></div>
+            </div>
+        </div>
+        <!--产品展示轮播-->
+        <div class="example_play">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product_wrap">
+                            <div class="product_img"><img src="images/product1.jpg" alt=""></div>
+                            <div class="product_font">
+                                <h3>胶粘剂</h3>
+                                <p>适用外墙保温系统中聚苯板和挤塑板与建筑外基面的粘结</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product_wrap">
+                            <div class="product_img"><img src="images/product2.jpg" alt=""></div>
+                            <div class="product_font">
+                                <h3>复合发泡水泥板</h3>
+                                <p>发泡水泥复合板是以周边钢围框、内置桁架与发泡水泥芯材及面层复合而成的轻质构件产品</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product_wrap">
+                            <div class="product_img"><img src="images/product3.jpg" alt=""></div>
+                            <div class="product_font">
+                                <h3>抹面胶浆</h3>
+                                <p>适用外墙保温系统的抹面，与耐碱网格布配合使用，组成抹灰增强防护层</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product_wrap">
+                            <div class="product_img"><img src="images/product4.jpg" alt=""></div>
+                            <div class="product_font">
+                                <h3>胶粘剂</h3>
+                                <p>适用于内外墙造型涂装</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!--底部-->
+        <footer>
+            <div class="logo_img"></div>
+            <div class="logo_font">
+                <p>渝ICP备16003891号</p>
+                <p>Copyright © 2015-2016 重庆三和汇联科技有限公司</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            loop : true,
+            loopAdditionalSlides:0,
+            autoplay:3000,
+            autoplayDisableOnInteraction:false,
+            paginationClickable: true,
+        });
+    </script>
+</body>
+</html>

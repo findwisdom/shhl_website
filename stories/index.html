@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>三和逸生</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script>
+        $(function(){
+            /*var y = 0;
+             var length = $(".photoplay img").length;
+             function play(){
+             a(y);
+             y++;
+             if (y == length) y = 0;
+             }
+             function a(x){
+             $(".photoplay").find("img").eq(x).stop(false,true).fadeIn(1500).siblings().fadeOut(1500);
+             }*/
+
+            $('#fullpage').fullpage({
+                navigation: true,
+                scrollingSpeed:800,
+                anchors: ['page1', 'page2', 'page3', 'page4'],
+                verticalCentered: false,
+                menu:true,
+
+                onLeave: function(index,nextIndex, direction){
+                    if(index == '1'){
+                        $('.font_size1 h3').animate({
+                            'left': '-600px',
+                            'fontSize':'50px'
+                        }, 1500, 'easeOutExpo');
+                        $('.font_bk').fadeOut(1000);
+                        $('.font_size1 p').animate({
+                            'right': '-600px',
+                            'fontSize':'20px'
+
+                        }, 1500, 'easeOutExpo');
+                    }
+                    if(index == '2'){
+                        $('.img_bottom').animate({
+                            'opacity':0.2,
+                            'top':'-1000px'
+                        }, 1500, 'easeOutExpo');
+                        $('.font_bottom').animate({
+                            bottom:'-400px'
+                        }, 2000, 'easeOutExpo');
+                        //clearInterval(show);
+                    }
+                    if(index == '3'){
+                        $('.font_size3').fadeOut(1000);
+                        $('.font_bk2').animate({
+                            top:'-290px'
+                        }, 1500, 'easeOutExpo');
+                    }
+                    if((index == '4')&&(direction=='up')){
+                        $('.font_bk2_img').fadeOut(1000);
+                        $('.content_bottom').animate({
+                            bottom:'-500px'
+                        }, 1500, 'easeOutExpo');
+                        $('.content_top').animate({
+                            top:'-800px'
+                        }, 1500, 'easeOutExpo');
+
+                    }
+                },
+
+                afterLoad: function(anchorLink, index){
+                    if(index == "1"){
+                        $('.font_size1 h3').animate({
+                            'left': 0,
+                            'fontSize':'33px'
+                        }, 1500, 'easeOutExpo');
+                        $('.font_bk').fadeIn(800);
+                        $('.font_size1 p').animate({
+                            'right':0,
+                            'fontSize':'15px'
+                        }, 1500, 'easeOutExpo');
+                    }
+                    if(index == '2'){
+                        $('.img_bottom').animate({
+                            'opacity':1,
+                            top:0
+                        }, 1500, 'easeOutExpo');
+                        $('.font_bottom').animate({
+                            bottom:0
+                        }, 1500, 'easeOutExpo');
+                        //show=setInterval(play,3000);
+                    }
+                    if(index == '3'){
+                        $('.font_size3').delay(1000).fadeIn(1000);
+                        $('.font_bk2').animate({
+                            top:0
+                        }, 1500, 'easeOutExpo');
+                    }
+                    if(index == '4'){
+                        $('.font_bk2_img').delay(1000).fadeIn(1000);
+                        $('.content_bottom').animate({
+                            bottom:0
+                        }, 1500, 'easeOutExpo');
+                        $('.content_top').animate({
+                            top:0
+                        }, 1500, 'easeOutExpo');
+
+                    }
+                }
+            });
+
+            //第二屏轮播
+            $(function() {
+                var bannerSlider = new Slider($('#banner_tabs'), {
+                    time: 5000,
+                    delay: 400,
+                    event: 'hover',
+                    auto: true,
+                    mode: 'fade',
+                    controller: $('#bannerCtrl'),
+                    activeControllerCls: 'active'
+                });
+                $('#banner_tabs .flex-prev').click(function() {
+                    bannerSlider.prev()
+                });
+                $('#banner_tabs .flex-next').click(function() {
+                    bannerSlider.next()
+                });
+            })
+        });
+    </script>
+</head>
+<body>
+<div id="fullpage">
+    <div class="section bk ">
+        <div class="font_size1" >
+            <h3>一席井深处 一眼温暖泉</h3>
+            <p>这井，有些年头了！</p>
+            <p>井壁长着青苔，虽绿迹斑斑，水却波澜不惊，深深或浅浅。</p>
+        </div>
+        <div class="font_bk"></div>
+    </div>
+    <div class="section bk1 ">
+        <div class="wrap">
+            <div class="photoplay">
+                <img src="images/01.jpg" alt="01" class="img_bottom">
+                <img src="images/bk2.jpg" alt="bk2" class="img_bottom" style="display: none">
+            </div>
+        </div>
+        <div class="font_bottom">
+            <div id="banner_tabs" class="flexslider">
+                <ul class="slides">
+                    <li class="font1">
+                        <h3>奶奶说 那是自然的味道 是甘甜</h3>
+                        <p>小时候，院子外面有一口深井，奶奶说，那是自然的味道，养育了几代人。从茶山里沁出来的泉</p>
+                        <p>水，被引流到这口井里。没有污染，是健康的水，是安全的水，喝起来甜甜的。</p>
+                    </li>
+                    <li class="font1">
+                        <p class="font_1p">附近的所有人日常用水都靠这口深井，它无穷无尽的提供着一股又一股清泉，像希望一样不断的涌现。</p>
+                        <p>我记得，炎炎夏日的时候，这清泉是冰凉的甜；</p>
+                        <p>我记得，寒风凌冽的时候，这清泉是温暖的甜。</p>
+                        <p>那时候大人们经常教育自家的小孩子，不允许私下到井边去，</p>
+                        <p>或许是怕谁家顽皮的小孩摔下去，又或许是怕孩子们脏了井里的泉水。</p>
+                    </li>
+                    <li class="font1">
+                        <p class="font_1p">闲来无事，经常坐在院子里望着那口井，望着那口井边来来往往的人。</p>
+                        <p>爷爷奶奶相伴来打水，他们说喝了一辈子井里的水，这口井是他们的青春；</p>
+                        <p>叔叔阿姨相伴来挑水，他们说喝了半辈子井里的水，这口井是他们的爱情；</p>
+                        <p>外地路过的人，喝一口井水，却只能停留在回味与记忆里！</p>
+                    </li>
+                </ul>
+                <div class="wra">
+                    <ul class="flex-direction-nav">
+                        <li><a class="flex-prev" href="javascript:;">Previous</a></li>
+                        <li><a class="flex-next" href="javascript:;">Next</a></li>
+                    </ul>
+                </div>
+                <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="section bk2">
+        <div class="font_size3" style="display: none">
+            <div class="h">
+                <h3>我认为</h3>
+                <h3>那是亲人的味道 是健康</h3>
+            </div>
+            <p>现在，长大的我离开了那口深井清泉，每天喝着五味杂陈的自来水，而奶奶也永远离开了我。</p>
+            <p>那天，误喝了一口生水，却拉肚子拉得连腰都直不起来。一个人躺在床上，想念的是家乡院边的清泉水。</p>
+            <p>我认为</p>
+            <p>那是亲人的味道，那里是奶奶一生停留的地方，一辈子在清泉边，一辈子也不曾离开过。</p>
+        </div>
+        <div class="font_bk2"></div>
+    </div>
+    <div class="section bk1">
+        <div class="content_top">
+            <div class="font_bk2_1">
+                <p>时代在不断发展，那口深井或许早已经随着变迁而不复存在，家家户户都有了自来水管。</p>
+                <p>不会再拿着盆子提着桶去井边打水，更不会再有邻居间的相互寒暄，只剩下陌路。</p>
+            </div>
+            <div class="font_bk2_2">
+                <p>今天我们致力于</p>
+                <p>还您儿时的记忆，还您健康好水，</p>
+                <p>把自然的味道放在家里，把亲人的味道留在身边，</p>
+            </div>
+
+            <div class="font_bk2_img" style="display: none">
+                <img src="images/addr.jpg" alt="">
+            </div>
+        </div>
+        <div class="content_bottom">
+            <div class="font_bk2_3">
+                <h3>三和逸生 因爱而生</h3>
+            </div>
+        </div>
+    </div>
+    <div class="section fp-auto-height">
+        <div class="footer">ICP渝0121252-1</div>
+    </div>
+</div>
+
+</body>
+</html>

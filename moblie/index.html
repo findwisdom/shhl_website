@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<script type="text/javascript">
+		/*	function browserRedirect() {
+				var sUserAgent = navigator.userAgent.toLowerCase();
+				var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+				var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+				var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+				var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+				var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+				var bIsAndroid = sUserAgent.match(/android/i) == "android";
+				var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+				var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+				if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
+					window.location='http://www.3-he.com.cn';
+				}
+			}
+			browserRedirect();*/
+		</script>
+		<script src="js/modernizr.custom.js"></script>
+		<link rel="stylesheet" href="css/reset.css">
+		<link  rel="stylesheet" href="css/example.css" />
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="css/effect1.css" />
+	</head>
+	<body>
+	<div id="ip-container" class="ip-container">
+		<!-- initial header -->
+		<header class="ip-header">
+			<div class="ip-logo"><img class="ip-inner"   src="images/logo_1.png"/></div>
+			<div class="ip-loader">
+				<svg class="ip-inner" width="160px" height="160px" viewBox="0 0 80 80">
+					<path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+					<path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+				</svg>
+			</div>
+		</header>
+		<div class="root">
+			<header>
+				<div class="logo"></div>
+			</header>
+			<div class="slider">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<a href="index2.html" class="swiper-slide"></a>
+						<a href="change_index/index_zhaoming.html" class="swiper-slide"></a>
+						<a href="change_index/index_gui.html" class="swiper-slide"></a>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<section class="arch">
+				<a class="a_wrap" href="index2.html">
+					<div class="common_img arch_img"></div>
+					<div class="arch_font">
+						<p>新型节能建材</p>
+						<p>New Energy-saving Building Materials</p>
+						<div class="buttun_play"><span class="icon"></span></div>
+					</div>
+				</a>
+			</section>
+			<section class="arch light">
+				<a class="a_wrap" href="change_index/index_zhaoming.html">
+					<div class="common_img light_img"></div>
+					<div class="arch_font">
+						<p>节能照明系统</p>
+						<p>Energy-saving Lighting System</p>
+						<div class="buttun_play"><span class="icon"></span></div>
+					</div>
+				</a>
+			</section>
+
+			<section class="arch print">
+				<a class="a_wrap" href="change_index/index_gui.html">
+					<div class="common_img print_img"></div>
+					<div class="arch_font">
+						<p>绿色生态涂装</p>
+						<p>Green Paint Ecological Health</p>
+						<div class="buttun_play"><span class="icon"></span></div>
+					</div>
+				</a>
+			</section>
+			<section class="bk"></section>
+			<section class="bk_font">
+				<p>重庆三和汇联科技有限公司是2015年成立的极富创新性的高科技互联网企业。公司秉承“智慧推动变革，绿色点亮未来”的企业理念，致力于社会成员健康低碳生活方式的推动和绿色生态建筑的推广服务，业务涵盖建筑全生命周期，产品惠及家庭和个人。</p>
+			</section>
+			<section class="service">
+				<h2>服务项目</h2>
+				<div class="service1">
+					<div class="service_logo1"><span></span></div>
+					<div class="service_font1">
+						<h3>绿色建筑+互联网</h3>
+						<p>是将互联网 + 的理念和技术引入建筑工地，实现“互联网+”与建筑工地的跨界融合，促进行业转型升级。</p>
+					</div>
+				</div>
+				<div class="service2">
+					<div class="service_logo2"><span></span></div>
+					<div class="service_font1">
+						<h3>网络运营</h3>
+						<p>网络运营不仅需要从网络角度知道网络运行状况，还需要从服务角度知道网络运行状况，有效利用网络资源。</p>
+					</div>
+				</div>
+				<div class="service3">
+					<div class="service_logo3"><span></span></div>
+					<div class="service_font1">
+						<h3>节能建筑智能产品</h3>
+						<p>建筑节能是关系到我国建设低碳经济、完成节能减排目标、保持经济可持续发展的重要环节之一。</p>
+					</div>
+				</div>
+			</section>
+			<!--example-->
+			<section class="example">
+				<p>案例展示</p>
+				<div class="example_play">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"></div>
+							<div class="swiper-slide"></div>
+							<div class="swiper-slide"></div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section class="phone">
+				<h3>联系我们</h3>
+				<div class="phone_content">
+					<div class="phone_img">
+						<div class="phone_address"></div>
+						<p>官方公众号三和汇联</p>
+					</div>
+					<div class="phone_font">
+						<div class="short_adress">
+							<div class="icon1"><div class="icon1_img"></div></div>
+							<div class="short_font"><p>重庆市永川区软件服务外包园B1-5</p></div>
+						</div>
+						<div class="short_adress">
+							<div class="icon1"><div class="icon2_img"></div></div>
+							<div class="short_font"><p>023-49899333</p></div>
+						</div>
+						<div class="short_adress">
+							<div class="icon1"><div class="icon3_img"></div></div>
+							<div class="short_font"><p>shhl@3-he.com.cn </p></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<p>渝ICP备16003891号</p>
+				<p>Copyright © 2015-2016 重庆三和汇联科技有限公司</p>
+			</footer>
+		</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/js.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				loop : true,
+				loopAdditionalSlides:0,
+				autoplay:3000,
+				autoplayDisableOnInteraction:false,
+				paginationClickable: true,
+			});
+		</script>
+	</body>
+</html>

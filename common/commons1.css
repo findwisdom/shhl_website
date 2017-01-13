@@ -1,0 +1,402 @@
+/*Create By Vergil*/
+/*重置样式表*/
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font:16px "Microsoft YaHei","宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
+a{color:#2d374b;text-decoration:none}
+a:hover{color:#cd0200;text-decoration:none}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+/*header*/
+header {
+    width: 100%;
+    height: 750px;
+    background: url("images/two_bk.jpg") no-repeat center center;
+    background-size:cover ;
+}
+
+/*导航*/
+nav {
+    overflow: hidden;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.breadcrumbs {
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+
+.classify {
+    width: 1080px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    color: #29d36d;
+}
+
+.classify ul li {
+    letter-spacing: 1px;
+    float: left;
+    line-height:55px;
+    text-align: center;
+    height:55px;
+    width:200px;
+    margin-left: 20px;
+    font-size: 24px;
+    font-family: "Microsoft yahei";
+    font-weight: bold;
+}
+.classify ul li:nth-child(1){
+    margin-left: 0;
+}
+.mark{
+    color: #ffffff;
+    background: #29d36d;
+}
+
+.bk_mark{
+    background: #29d36d;
+    color: #fff;
+}
+.line {
+    height:5px;
+    width:1080px;
+    background-color: rgb(41, 211, 109);
+}
+.line_1{
+    width: 1080px;
+    height: 1px;
+    margin-top: 3px;
+    background-color: rgb(41, 211, 109);
+    margin-bottom: 36px;
+}
+.root{
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+/*外墙外保温系统*/
+.part1 {
+    /* max-width:58.75em ;*/
+    overflow: hidden;
+    height: 145em;
+    width: 1080px;
+    margin: 0 auto;
+}
+.thermalImg{
+    width: 100%;
+}
+
+.thermalTop {
+    height:auto;
+    max-width: 100%;
+
+}
+
+.thermalTop p{
+    font-family: "Microsoft yahei";
+    color: #535353;
+    margin-top: 11px;
+    font-size: 18px;
+}
+.thermalTop p:nth-child(2){
+    margin-top: 18px;
+    font-weight:bold;
+}
+.thermalTop p:nth-child(3){
+    font-family: "宋体";
+}
+p.title {
+    font-family: "Microsoft yahei";
+    font-size: 30px;
+    line-height: 30px;
+    color:#29d36d;
+    font-weight:bold;
+    margin-top: 0;
+}
+
+.thermalImg > img {
+    margin: 2em 0 0 17.7%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.title2 {
+    font-family: "Microsoft yahei";
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.3125em;
+    color: rgb(41, 211, 109);
+    margin-top: 67px;
+    margin-bottom: 35px;
+}
+
+.performance {
+    width:100px ;
+    margin-top: 2.5em;
+    overflow: hidden;
+    height: 237px;
+}
+
+.performanceLeft {
+    margin-top: 12px;
+    font-family:"Microsoft yahei";
+    float: left;
+    width: 300px;
+    overflow: hidden;
+}
+
+.performanceLeft p{
+    font-family:"Microsoft yahei";
+    margin-bottom: 1em;
+    font-size: 18px;
+    color: #535353;
+}
+.performanceLeft p:nth-child(1){
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #535353;
+}
+.performanceRight {
+    float: right;
+    display: block;
+}
+.thermalFoot{
+    width: 100%;
+    margin-top: 3em;
+}
+
+/*乳胶漆涂装系统*/
+.part2 {
+   /* overflow: hidden;*/
+    /*display: none;*/
+    width: 1080px;
+    height: auto;
+    margin: 0 auto;
+}
+.product-Display{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+.product-Display-Title{
+    font-family: "Microsoft yahei";
+    font-size: 30px;
+    line-height: 30px;
+    color:#29d36d;
+    font-weight:bold;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 68px;
+}
+.product-Display-Img{
+    width: 33.3%;
+    overflow: hidden;
+    display: inline-block;
+}
+.funtan_img{
+    width: 100%;
+    overflow: hidden;
+}
+.funtan_img img{
+    width: 100%;
+}
+.product-Display-Img:nth-child(2){
+    float: left;
+}
+
+.product-Display-Img:nth-child(3){
+    width: 33.3%;
+}
+.product-Display-Img:nth-child(3) img{
+    margin: 0 auto;
+}
+.product-Display-Img:nth-child(4){
+     float: right;
+ }
+.product-Display-Img:nth-child(4) img{
+    float: right;
+}
+.thermalMid ul li{
+    font-size: 20px;
+    color: #626262;
+    height: 37px;
+    line-height: 37px;
+}
+.thermal-Left{
+    float: left;
+    margin-top: 20px;
+}
+.thermal-Middle{
+    float: left;
+    margin-left:195px;
+    margin-top: 20px;
+}
+.thermal-Right{
+    float: right;
+}
+.thermal-Right2{
+    float: right;
+}
+
+.thermalMid{
+    width: 100%;
+    overflow: hidden;
+    font-family: "Microsoft yahei";
+}
+.thermalMid p:nth-child(2){
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #535353;
+}
+.thermalMid p:nth-child(3){
+    color: #818181;
+    font-size: 19px;
+    font-family: '宋体';
+}
+.thermalFoot-Title{
+    font-family: "Microsoft yahei";
+    margin:0 0 58px 0;
+    font-size: 30px;
+    color:#29d36d;
+    font-weight: bold;
+
+}
+.title_top{
+    margin-top:85px;
+}
+
+/*商品*/
+.commodity {
+    overflow: hidden;
+    margin: 200px  auto 0;
+    height: 610px;
+    background-color: rgb(232, 232, 232);
+}
+
+.title3 {
+    margin-top:50px;
+    color: rgb(41, 211, 109);
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+
+.commodityNav{
+    width: 37.23%;
+    margin-left: 40.8854%;
+}
+.commodityNav>ul>li{
+    display: inline-block;
+    width: 16.78%;
+    margin-left: 1.5em;
+}
+
+/*商品展示*/
+.commdityImg{
+     width:14.0625% ;
+    height: 22.8125em;
+    background-color: #02a8f4;
+    margin: 1.375em 3.4375% 0 21.875%;
+    float: left;
+}
+.catalogue{
+    margin-top: 1.375em;
+    width: 36.45%;
+    height: 25em;
+    float: left;
+}
+.catalogueTop{
+    width: 100%;
+    height: 12.5em;
+}
+.catalogueBut{
+    width: 100%;
+    height: 12.5em;
+}
+.productDetils{
+    height: 12.5em;
+    float: left;
+    margin-left: 0.5em;
+}
+.productDetils>img{
+    border: solid 1px;
+}
+
+
+
+/*底部*/
+/*底部*/
+.foot{
+    width: 100%;
+    overflow: hidden;
+    height: 250px;
+}
+.foot_center{
+    height: 250px;
+    overflow: hidden;
+    width: 1065px;
+    margin: 0 auto;
+    position: relative;
+}
+.text_common{
+    height:12em;
+    overflow: hidden;
+    width: 840px;
+    float: left;
+}
+
+.footText{
+    margin-top: 55px;
+    float: left;
+    width: 140px;
+}
+.footText1{
+    margin-top: 55px;
+    width: 140px;
+    float: left;
+}
+.footTextLi{
+    font-weight: bold;
+    font-family: "Microsoft yahei";
+    color: #535353;
+
+}
+.footText ul li a,.footText1 ul li a{
+    color: #979797;
+    font-size: 14px;
+}
+
+.footTextLi{
+    color: #535353;
+    margin-bottom:2em;
+
+}
+
+.qrCode {
+    font-family: "Microsoft yahei";
+    margin-top: 48px;
+    height: 9.5em;
+    float: right;
+    width: 180px;
+    margin-left: 30px;
+}
+.copyright{
+    font-family: "Microsoft yahei";
+    overflow: hidden;
+    background: #535353;
+    height: 65px;
+    width: 100%;
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+}
+.copyright p:nth-child(1){
+    font-family: "Microsoft yahei";
+    margin-top: 20px;
+}}

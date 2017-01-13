@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="css/reset.css">
+    <link  rel="stylesheet" href="css/css1.css" />
+    <link rel="stylesheet" href="css/swiper.min1.css">
+</head>
+<body>
+    <div class="root">
+        <!--顶栏-->
+        <header>
+            <div class="logo"></div>
+        </header>
+        <!--项目-->
+        <div class="project">
+            <a href="change_index/index_bwsys.html"><div class="project_1"><img src="images/two_bk1.jpg" alt=""><div class="project1_font">外墙保温系统</div></div></a>
+            <a href="change_index/index_tssys.html"><div class="project_2"><img src="images/two_bk2.jpg" alt=""><div class="project2_font">外墙涂饰系统</div></div></a>
+        </div>
+        <div class="content">
+            <div class="style">
+                <a href="change_index/index_baowen.html">
+                    <div class="style_img"><img src="images/introduce1.jpg" alt=""></div>
+                    <div class="style_font">
+                        <h4>外墙保温</h4>
+                        <p>新型建材体系·保温系统解决方案</p>
+                    </div>
+                </a>
+            </div>
+            <div class="style mark_margin">
+                <a href="change_index/index_fanxin.html">
+                    <div class="style_img"><img src="images/introduce2.jpg" alt=""></div>
+                    <div class="style_font">
+                        <h4>墙面翻新</h4>
+                        <p>新型建材体系·外墙翻新解决方案</p>
+                    </div>
+                </a>
+            </div>
+            <div class="style mark_margin">
+                <a href="change_index/index_fanxin.html">
+                    <div class="style_img"><img src="images/introduce3.jpg" alt=""></div>
+                    <div class="style_font">
+                        <h4>外墙涂饰系统</h4>
+                        <p>新型建材体系·外墙涂饰系统解决方案</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--产品轮播-->
+        <div class="example_play">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product_wrap">
+                            <div class="product_img"><img src="images/product1.jpg" alt=""></div>
+                            <div class="product_font">
+                                <h3>胶粘剂</h3>
+                                <p>适用外墙保温系统中聚苯板和挤塑板与建筑外基面的粘结</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product_wrap">
+                            <div class="product_img"><img src="images/product2.jpg" alt=""></div>
+                            <div class="product_font">
+                                <h3>复合发泡水泥板</h3>
+                                <p>发泡水泥复合板是以周边钢围框、内置桁架与发泡水泥芯材及面层复合而成的轻质构件产品</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product_wrap">
+                            <div class="product_img"><img src="images/product3.jpg" alt=""></div>
+                            <div class="product_font">
+                                <h3>抹面胶浆</h3>
+                                <p>适用外墙保温系统的抹面，与耐碱网格布配合使用，组成抹灰增强防护层</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product_wrap">
+                            <div class="product_img"><img src="images/product4.jpg" alt=""></div>
+                            <div class="product_font">
+                                <h3>胶粘剂</h3>
+                                <p>适用于内外墙造型涂装</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <footer>
+            <div class="logo_img"></div>
+            <div class="logo_font">
+                <p>渝ICP备16003891号</p>
+                <p>Copyright © 2015-2016 重庆三和汇联科技有限公司</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/js.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            loop : true,
+            loopAdditionalSlides:0,
+            autoplay:3000,
+            autoplayDisableOnInteraction:false,
+            paginationClickable: true,
+        });
+    </script>
+    <script>
+        $(function(){
+            $('.style').bind('touchstart',function(){
+                $(this).addClass("style_on").siblings(".style").removeClass("style_on");
+            });
+    })
+    </script>
+
+</body>
+</html>

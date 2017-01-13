@@ -1,0 +1,188 @@
+body{
+    background: #ffffff;
+    overflow-x: hidden;
+}
+/*头部*/
+.root{
+    position: relative;
+    overflow-x:hidden;
+    background: #f6f6f6;
+    margin: 0 auto;
+    max-width: 640px;
+    height: auto;
+    font-family:"Microsoft YaHei";
+}
+header{
+    height: 4.5rem;
+    position: relative;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 1rem #000;
+    z-index: 4;
+}
+.logo{
+    z-index: 2;
+    position: absolute;
+    top:0.225rem;
+    left: 1.7rem;
+    height: 4.05rem;
+    width: 9.09rem;
+    background: url("../images/logo.png") no-repeat center;
+    background-size: contain;
+}
+.project{
+    width: 100%;
+    height: auto;
+    overflow-x:hidden ;
+}
+.project_1{
+    height: auto;
+    overflow-x:hidden ;
+    position: relative;
+}
+.project_1>img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.project_2{
+    height: auto;
+    overflow-x:hidden ;
+    position: relative;
+}
+.project_2>img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.project1_font,.project2_font{
+    font-size: 2em;
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    color: #fff;
+    font-family:"Microsoft YaHei";
+    font-weight: bold;
+}
+.content{
+    margin-top: 3.1rem;
+}
+.style{
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 90%;
+    height: auto;
+    position: relative;
+    z-index: 4;
+}
+.style_on{
+    box-shadow: 0 0 1.5rem #535353;
+}
+.mark_margin{
+    margin-top: 2.2rem;
+}
+.style_img{
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+}
+
+.style_img>img{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.style_font{
+    background: #ffffff;
+    height: 6rem;
+    overflow-x: hidden;
+}
+
+.style_font h4{
+    font-family: 'Microsoft YaHei';
+    color: #adadad;
+    font-size: 1.6rem;
+    height: 2.3rem;
+    padding-left: 1.4rem;
+    line-height: 2.3rem;
+    margin-top: 0.6rem;
+}
+.style_font p{
+    padding-left: 1.5rem;
+    font-size: 1.6rem;
+    color: #bebebe;
+    font-family:"Microsoft YaHei" ;
+}
+.example_play{
+    margin-top: 3rem;
+    position: relative;
+    width: 100%;
+    height: 16rem;
+    overflow-x: hidden;
+}
+.product_wrap{
+    display:-webkit-flex;
+    display:flex;
+    position: relative;
+    padding: 1rem;
+    height: 16rem;
+    overflow: hidden;
+    background: #ffffff;
+}
+.product_img{
+    -webkit-flex: 0 0 11rem;
+    flex: 0 0 11rem;
+    /* for uc */
+    -webkit-box-flex: 0 0 11rem;
+    -moz-box-flex:0 0 11rem ;
+    -ms-flex: 0 0 11rem;
+    overflow: hidden;
+    height: 14rem;
+    border: 1px solid #919191;
+}
+.product_img img{
+
+    display: block;
+    width: 100%;
+}
+.product_font{
+
+    flex:1 0 0;
+    /* for uc */
+    -webkit-box-flex:1 0 auto;
+    -moz-box-flex:1 0 auto;
+    -ms-flex:1 0 auto;
+    padding: 1rem;
+    overflow: hidden;
+}
+.product_font h3{
+    margin-left: 1rem;
+    font-size: 1.6rem;
+}
+.product_font p{
+    margin-left: 1rem;
+    text-align: justify;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4){
+    margin-right: 2rem;
+}
+/*底部*/
+footer{
+    width: 100%;
+    overflow: hidden;
+    height: 8.3rem;
+    background: #e5e5e5;
+    text-align: center;
+}
+.logo_img{
+    margin: 1.6rem auto 1.2rem;
+    width: 16rem;
+    height: 1.5rem;
+    background: url("../images/footer.png") no-repeat center center;
+    background-size: cover;
+}
+.logo_font{
+    margin-bottom: 1.2rem;
+}
